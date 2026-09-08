@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PH Design — Duş Kanalınızı Tasarlayın</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,340;9..144,440&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="mark">PH DESIGN</div>
+</header>
+
+<main class="configurator">
+
+  <section class="intro">
+    <h1 class="intro-title">Duş kanalınızı<br>tasarlayın</h1>
+    <p class="intro-copy">Kanal yüzeyini ve zemin fayansını seçin, kombinasyonun mekânda nasıl durduğunu görün.</p>
+  </section>
+
+  <div class="layout">
+
+    <div class="controls">
+
+      <fieldset class="choice-group" data-group="kanal">
+        <legend>Duş kanalı</legend>
+        <div class="swatch-row" id="kanal-row">
+          <button type="button" class="swatch" data-value="gold" style="--swatch-color:#C6A567;--swatch-color-2:#8A7238;">
+            <span class="swatch-face"></span>
+            <span class="swatch-label">Gold</span>
+          </button>
+          <button type="button" class="swatch" data-value="bronz" style="--swatch-color:#7A5233;--swatch-color-2:#4E3320;">
+            <span class="swatch-face"></span>
+            <span class="swatch-label">Bronz</span>
+          </button>
+          <button type="button" class="swatch" data-value="mat-siyah" style="--swatch-color:#2B2926;--swatch-color-2:#0E0D0C;">
+            <span class="swatch-face"></span>
+            <span class="swatch-label">Mat Siyah</span>
+          </button>
+          <button type="button" class="swatch" data-value="inox" style="--swatch-color:#C7CBCE;--swatch-color-2:#8D9296;">
+            <span class="swatch-face"></span>
+            <span class="swatch-label">İnox</span>
+          </button>
+        </div>
+      </fieldset>
+
+      <fieldset class="choice-group" data-group="fayans">
+        <legend>Fayans</legend>
+        <div class="swatch-row" id="fayans-row">
+          <button type="button" class="swatch" data-value="siyah" style="--swatch-color:#232323;--swatch-color-2:#050505;">
+            <span class="swatch-face"></span>
+            <span class="swatch-label">Siyah</span>
+          </button>
+          <button type="button" class="swatch" data-value="krem" style="--swatch-color:#E4D9C4;--swatch-color-2:#C9B994;">
+            <span class="swatch-face"></span>
+            <span class="swatch-label">Krem</span>
+          </button>
+          <button type="button" class="swatch" data-value="beyaz" style="--swatch-color:#F5F4F1;--swatch-color-2:#DAD8D2;">
+            <span class="swatch-face"></span>
+            <span class="swatch-label">Beyaz</span>
+          </button>
+          <button type="button" class="swatch" data-value="gri" style="--swatch-color:#9C9C98;--swatch-color-2:#6C6C68;">
+            <span class="swatch-face"></span>
+            <span class="swatch-label">Gri</span>
+          </button>
+        </div>
+      </fieldset>
+
+      <div class="selection-readout">
+        <span id="readout-kanal">Gold</span>
+        <span class="readout-sep">/</span>
+        <span id="readout-fayans">Siyah</span>
+      </div>
+
+    </div>
+
+    <div class="viewer">
+      <div class="viewer-frame">
+        <img id="combo-image" src="" alt="Seçilen duş kanalı ve fayans kombinasyonu" />
+        <div class="viewer-empty" id="viewer-empty">
+          <p>Bu kombinasyon için görsel yakında eklenecek.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
